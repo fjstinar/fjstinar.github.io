@@ -4,54 +4,80 @@ title: DebiasED Tutorial
 subtitle: Tutorial to use the DebiasED package for the 2025 Educational Data Mining Conference
 ---
 
-{: .box-success}
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/tables/etc.<br/>I also encourage you to look at the [code that created this post](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/_posts/2020-02-28-sample-markdown.md) to learn some more advanced tips about using markdown in Beautiful Jekyll.
+<div class="box-success">
+  <p>This is a demo post to show you how to write blog posts with markdown. I strongly encourage you to <a href="https://markdowntutorial.com/">take 5 minutes to learn how to write in markdown</a> - it'll teach you how to transform regular text into bold/italics/tables/etc.<br/>I also encourage you to look at the <a href="https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/_posts/2020-02-28-sample-markdown.md">code that created this post</a> to learn some more advanced tips about using markdown in Beautiful Jekyll.</p>
+</div>
 
-**Here is some bold text**
+<p><strong>Here is some bold text</strong></p>
 
-## Here is a secondary heading
+<h2>Here is a secondary heading</h2>
 
-[This is a link to a different site](https://deanattali.com/) and [this is a link to a section inside this page](#local-urls).
+<p><a href="https://deanattali.com/">This is a link to a different site</a> and <a href="#local-urls">this is a link to a section inside this page</a>.</p>
 
-Here's a table:
+<p>Here's a table:</p>
 
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Number</th>
+      <th style="text-align: left">Next number</th>
+      <th style="text-align: left">Previous number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Five</td>
+      <td style="text-align: left">Six</td>
+      <td style="text-align: left">Four</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Ten</td>
+      <td style="text-align: left">Eleven</td>
+      <td style="text-align: left">Nine</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Seven</td>
+      <td style="text-align: left">Eight</td>
+      <td style="text-align: left">Six</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Two</td>
+      <td style="text-align: left">Three</td>
+      <td style="text-align: left">One</td>
+    </tr>
+  </tbody>
+</table>
 
-You can use [MathJax](https://www.mathjax.org/) to write LaTeX expressions. For example:
-When \\(a \ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+<p>You can use <a href="https://www.mathjax.org/">MathJax</a> to write LaTeX expressions. For example:
+When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
 
-How about a yummy crepe?
+<p>How about a yummy crepe?</p>
 
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg)
+<img src="https://beautifuljekyll.com/assets/img/crepe.jpg" alt="Crepe">
 
-It can also be centered!
+<p>It can also be centered!</p>
 
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg){: .mx-auto.d-block :}
+<img src="https://beautifuljekyll.com/assets/img/crepe.jpg" alt="Crepe" class="mx-auto d-block">
 
-Here's a code chunk:
+<p>Here's a code chunk:</p>
 
-~~~
+<pre>
 var foo = function(x) {
   return(x + 5);
 }
 foo(3)
-~~~
+</pre>
 
-And here is the same code with syntax highlighting:
+<p>And here is the same code with syntax highlighting:</p>
 
-```javascript
+<pre><code class="language-javascript">
 var foo = function(x) {
   return(x + 5);
 }
 foo(3)
-```
+</code></pre>
 
-And here is the same code yet again but with line numbers:
+<p>And here is the same code yet again but with line numbers:</p>
 
 {% highlight javascript linenos %}
 var foo = function(x) {
@@ -60,35 +86,38 @@ var foo = function(x) {
 foo(3)
 {% endhighlight %}
 
-## Boxes
-You can add notification, warning and error boxes like this:
+<h2>Boxes</h2>
+<p>You can add notification, warning and error boxes like this:</p>
 
-### Notification
+<h3>Notification</h3>
 
-{: .box-note}
-**Note:** This is a notification box.
+<div class="box-note">
+  <p><strong>Note:</strong> This is a notification box.</p>
+</div>
 
-### Warning
+<h3>Warning</h3>
 
-{: .box-warning}
-**Warning:** This is a warning box.
+<div class="box-warning">
+  <p><strong>Warning:</strong> This is a warning box.</p>
+</div>
 
-### Error
+<h3>Error</h3>
 
-{: .box-error}
-**Error:** This is an error box.
+<div class="box-error">
+  <p><strong>Error:</strong> This is an error box.</p>
+</div>
 
-## Local URLs in project sites {#local-urls}
+<h2 id="local-urls">Local URLs in project sites</h2>
 
-When hosting a *project site* on GitHub Pages (for example, `https://USERNAME.github.io/MyProject`), URLs that begin with `/` and refer to local files may not work correctly due to how the root URL (`/`) is interpreted by GitHub Pages. You can read more about it [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). To demonstrate the issue, the following local image will be broken **if your site is a project site:**
+<p>When hosting a <em>project site</em> on GitHub Pages (for example, <code>https://USERNAME.github.io/MyProject</code>), URLs that begin with <code>/</code> and refer to local files may not work correctly due to how the root URL (<code>/</code>) is interpreted by GitHub Pages. You can read more about it <a href="https://beautifuljekyll.com/faq/#links-in-project-page">in the FAQ</a>. To demonstrate the issue, the following local image will be broken <strong>if your site is a project site:</strong></p>
 
-![Crepe](/assets/img/crepe.jpg)
+<img src="/assets/img/crepe.jpg" alt="Crepe">
 
-If the above image is broken, then you'll need to follow the instructions [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). Here is proof that it can be fixed:
+<p>If the above image is broken, then you'll need to follow the instructions <a href="https://beautifuljekyll.com/faq/#links-in-project-page">in the FAQ</a>. Here is proof that it can be fixed:</p>
 
-![Crepe]({{ '/assets/img/crepe.jpg' | relative_url }})
+<img src="{{ '/assets/img/crepe.jpg' | relative_url }}" alt="Crepe">
 
-<details markdown="1">
-<summary>Click here!</summary>
-Here you can see an **expandable** section
+<details>
+  <summary>Click here!</summary>
+  <p>Here you can see an <strong>expandable</strong> section</p>
 </details>
