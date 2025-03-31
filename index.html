@@ -5,119 +5,118 @@ subtitle: Tutorial to use the DebiasED package for the 2025 Educational Data Min
 ---
 
 <div class="box-success">
-  <p>This is a demo post to show you how to write blog posts with markdown. I strongly encourage you to <a href="https://markdowntutorial.com/">take 5 minutes to learn how to write in markdown</a> - it'll teach you how to transform regular text into bold/italics/tables/etc.<br/>I also encourage you to look at the <a href="https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/_posts/2020-02-28-sample-markdown.md">code that created this post</a> to learn some more advanced tips about using markdown in Beautiful Jekyll.</p>
+  <p>Welcome to the DebiasED Tutorial for EDM 2025! This hands-on session will explore bias detection and mitigation in educational data mining.</p>
 </div>
 
-<p><strong>Here is some bold text</strong></p>
+<h2>Overview</h2>
+<p>Educational data mining has transformed education by harnessing data to improve various educational dimensions. While predictive models have become core to many modern educational systems, they've also raised concerns about fairness and inherent biases in training data. This tutorial introduces participants to the DebiasED package, a comprehensive toolkit for identifying and addressing bias in educational data through pre-processing, in-processing, and post-processing techniques.</p>
 
-<h2>Here is a secondary heading</h2>
+<h2>Learning Goals</h2>
+<p>By the end of this tutorial, participants will be able to:</p>
+<ul>
+  <li>Identify potential types of biases in their data and understand how they propagate through models</li>
+  <li>Apply various mitigation techniques using the DebiasED package to their own data</li>
+  <li>Analyze the impact of bias mitigation techniques through different algorithmic fairness metrics</li>
+  <li>Present results in terms of fairness performances</li>
+</ul>
 
-<p><a href="https://deanattali.com/">This is a link to a different site</a> and <a href="#local-urls">this is a link to a section inside this page</a>.</p>
-
-<p>Here's a table:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Number</th>
-      <th style="text-align: left">Next number</th>
-      <th style="text-align: left">Previous number</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">Five</td>
-      <td style="text-align: left">Six</td>
-      <td style="text-align: left">Four</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Ten</td>
-      <td style="text-align: left">Eleven</td>
-      <td style="text-align: left">Nine</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Seven</td>
-      <td style="text-align: left">Eight</td>
-      <td style="text-align: left">Six</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Two</td>
-      <td style="text-align: left">Three</td>
-      <td style="text-align: left">One</td>
-    </tr>
-  </tbody>
+<h2>Detailed Schedule</h2>
+<table class="table table-bordered">
+  <tr>
+    <th>Part</th>
+    <th>Description</th>
+    <th>Time</th>
+  </tr>
+  <tr>
+    <td>I</td>
+    <td>Conceptual Overview</td>
+    <td>0:00 - 0:30</td>
+  </tr>
+  <tr>
+    <td>II</td>
+    <td>Walk through example with open source educational dataset</td>
+    <td>0:30 - 1:15</td>
+  </tr>
+  <tr>
+    <td>III</td>
+    <td>Package implementation approaches</td>
+    <td>1:15 - 2:00</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><em>Break</em></td>
+    <td>2:00 - 2:30</td>
+  </tr>
+  <tr>
+    <td>IV</td>
+    <td>Hands-on exploration with participants' data</td>
+    <td>2:30 - 3:15</td>
+  </tr>
+  <tr>
+    <td>V</td>
+    <td>Group presentations of results</td>
+    <td>3:15 - 3:55</td>
+  </tr>
+  <tr>
+    <td>VI</td>
+    <td>Closing remarks</td>
+    <td>3:55 - 4:00</td>
+  </tr>
 </table>
 
-<p>You can use <a href="https://www.mathjax.org/">MathJax</a> to write LaTeX expressions. For example:
-When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
-
-<p>How about a yummy crepe?</p>
-
-<img src="https://beautifuljekyll.com/assets/img/crepe.jpg" alt="Crepe">
-
-<p>It can also be centered!</p>
-
-<img src="https://beautifuljekyll.com/assets/img/crepe.jpg" alt="Crepe" class="mx-auto d-block">
-
-<p>Here's a code chunk:</p>
-
-<pre>
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-</pre>
-
-<p>And here is the same code with syntax highlighting:</p>
-
-<pre><code class="language-javascript">
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-</code></pre>
-
-<p>And here is the same code yet again but with line numbers:</p>
-
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
-
-<h2>Boxes</h2>
-<p>You can add notification, warning and error boxes like this:</p>
-
-<h3>Notification</h3>
-
+<h2>Technical Approach</h2>
 <div class="box-note">
-  <p><strong>Note:</strong> This is a notification box.</p>
+  <p><strong>The DebiasED package offers three main approaches to bias mitigation:</strong></p>
+  <ul>
+    <li><strong>Pre-processing techniques:</strong> Transform and modify data before training models</li>
+    <li><strong>In-processing techniques:</strong> Replace original machine learning models with debiased alternatives</li>
+    <li><strong>Post-processing techniques:</strong> Mitigate bias after model training</li>
+  </ul>
 </div>
 
-<h3>Warning</h3>
-
+<h2>Software Requirements</h2>
 <div class="box-warning">
-  <p><strong>Warning:</strong> This is a warning box.</p>
+  <p><strong>Before the tutorial:</strong></p>
+  <ul>
+    <li>Install Python (if not already installed)</li>
+    <li>Install required packages:
+      <pre><code>pip install debiased
+pip install pandas numpy scikit-learn</code></pre>
+    </li>
+  </ul>
+  <p><em>Note: We will provide access to Google Colab notebooks if you encounter installation issues.</em></p>
 </div>
 
-<h3>Error</h3>
+<h2>Dataset Information</h2>
+<p>The tutorial will use two types of datasets:</p>
+<ul>
+  <li><strong>Example Dataset:</strong> Student Portuguese Performance dataset (SPP) containing:
+    <ul>
+      <li>Data from 649 students (383 female, 266 male)</li>
+      <li>33 features related to academic scores and demographics</li>
+      <li>Used for demonstration and learning purposes</li>
+    </ul>
+  </li>
+  <li><strong>Personal Datasets:</strong> Participants are encouraged to bring their own educational datasets for hands-on practice</li>
+</ul>
 
-<div class="box-error">
-  <p><strong>Error:</strong> This is an error box.</p>
+<h2>Prerequisites</h2>
+<div class="box-note">
+  <p><strong>Required:</strong></p>
+  <ul>
+    <li>Basic knowledge of Python programming</li>
+    <li>Familiarity with educational data analysis</li>
+    <li>Laptop with Python 3.7+ installed</li>
+  </ul>
 </div>
 
-<h2 id="local-urls">Local URLs in project sites</h2>
+<h2>Organizers</h2>
+<ul>
+  <li><strong>Frank Stinar</strong> - University of Illinois</li>
+  <li><strong>Jade Mai-Cock</strong> - Institution</li>
+  <li><strong>Rene Kizilcec</strong> - Institution</li>
+  <li><strong>Tanja Kaser</strong> - Institution</li>
+</ul>
 
-<p>When hosting a <em>project site</em> on GitHub Pages (for example, <code>https://USERNAME.github.io/MyProject</code>), URLs that begin with <code>/</code> and refer to local files may not work correctly due to how the root URL (<code>/</code>) is interpreted by GitHub Pages. You can read more about it <a href="https://beautifuljekyll.com/faq/#links-in-project-page">in the FAQ</a>. To demonstrate the issue, the following local image will be broken <strong>if your site is a project site:</strong></p>
-
-<img src="/assets/img/crepe.jpg" alt="Crepe">
-
-<p>If the above image is broken, then you'll need to follow the instructions <a href="https://beautifuljekyll.com/faq/#links-in-project-page">in the FAQ</a>. Here is proof that it can be fixed:</p>
-
-<img src="{{ '/assets/img/crepe.jpg' | relative_url }}" alt="Crepe">
-
-<details>
-  <summary>Click here!</summary>
-  <p>Here you can see an <strong>expandable</strong> section</p>
-</details>
+<h2>Contact</h2>
+<p>For any questions about the tutorial, please contact: <a href="mailto:fstinar2@illinois.edu">fstinar2@illinois.edu</a></p>
