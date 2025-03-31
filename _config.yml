@@ -20,11 +20,10 @@ author: Frank Stinar
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
   Resources:
     - Tutorial Proposal: "https://beautifuljekyll.com"
     - DebiasED Package: "https://www.markdowntutorial.com/"
-  Author's homes: 
+  Organizer's homes: 
     - Frank Stinar: "https://frank-co.de"
     - Jade Mai-Cock: "https://frank-co.de"
     - Rene Kizilcec: "https://frank-co.de"
