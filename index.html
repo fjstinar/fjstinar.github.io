@@ -1,81 +1,417 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>frank stinar</title>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>anthony pinter</title>
+  <meta name="description" content="anthony pinter">
+  <meta name="keywords" content="anthony pinter">
+  <meta property="og:url" content="https://www.anthonypinter.com">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="anthony pinter">
+  <meta property="og:title" content="anthony pinter">
+  <meta property="og:description" content="anthony pinter">
+  <meta property="og:locale" content="en_US">
+
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" type="text/css">
+  <link href="../css/fonts/stylesheet.css" rel="stylesheet" type="text/css">
+  <link href="../css/index.css" rel="stylesheet" type="text/css">
   <link href="../css/alert.css" rel="stylesheet" type="text/css">
 
   <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
   <script defer src="../js/transition.js"></script>
+  <!-- <script defer src="../js/headshot.js"></script> -->
+
 </head>
 
-<body>
 
-  <div class ="left">
-    <a id="navi" class="title-name" href="/">
-    <h1>Frank Stinar</h1>
-    </a>
-    <ul id="navi">
+  <body>
+    <div class="left">
+  <div id="headshot">
+    <!-- <a href="/"><img src="/" id="headshot-photo"></a> -->
+    <a href="/"><img src="/assets/AnothonyPinter.png" id="headshot-photo"></a>
+  </div>
+  <a id="navi" class="title-name" href="/"><h1>Anthony Pinter.</h1></a>
+  <ul id="navi">
     <li id="navi-home">
       <a id="navi">home.</a>
+    </li><p></p>
+    <li id="navi-about">
+      <a id="navi">about.</a>
     </li><p></p>
     <li id="navi-publications">
       <a id="navi">publications.</a>
     </li><p></p>
-  </ul>
-  </div>
-
-<div id="home" class="card" style="display: block;">
-  <h2>hi</h2>
-  <div id="bio">
-    <p>I am a <a href="https://ischool.illinois.edu/people/frank-stinar">5th year PhD student in the School of Information Sciences</a> at the University of Illinois Urbana-Champaign. My research focuses on the intersection of education, machine learning, and ethics.</p>
-    <p>I am currently advised by <a href="https://pnigel.com/">Nigel Bosch</a>, and I have had the opportunity to be mentored by other outstanding researchers in the field such as <a href = "https://www.jedbrubaker.com/">Jed R. Brubaker</a> and <a href= "https://sjhutt.com/">Stephen Hutt</a>.</p>
-    <p>I currently reside in the <a href="https://humanplusml.com/">(Human + Machine) Learning Lab</a>, and have had the opportunity to work with researchers across the globe at the <a href="https://www.epfl.ch/labs/ml4ed/">ML4ED Lab</a>, the <a href="https://learning.cis.cornell.edu/">Future of Learning Lab</a>, and <a href="https://www.carnegielearning.com/">Carnegie Learning</a>.</p>
-  </div>
-
-  <div id="news">
-  <div id ="news-title"><h2>recently</h2></div>
-  <ul>
-    <li>
-    <div>
-    <p style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">26 July 2025</p>
-    </div>
-    <p>Co-chaired the Fair4AIED Workshop at the AIED 2025.</p>
-  </li>
-  <li>
-    <div>
-    <p style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">July 2025</p>
-    </div>
-    <p>Presented a full paper at EDM 2025 and a full paper at AIED 2025.</p>
-  </li>
-  <li>
-    <div>
-    <p style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">July 2025</p>
-    </div>
-    <p>Released the open source Python package <a href="https://pypi.org/project/debiased/">DebiasED</a> meant for introducting unfairness mitigation in educational machine learning pipelines.</p>
-  </li>
+    <li id="navi-projects">
+      <a id="navi">projects.</a>
+    </li><p></p>
+    <li id="navi-cv">
+      <a id="navi">cv.</a>
+    </li><p></p>
+    <!-- <li id="navi-contact">
+      <a id="navi">contact.</a>
+    </li><p></p> -->
   </ul>
 </div>
-</div>
-<div id="publications" class="card" style="display: block;">
+
+      <div id="home" class="card">
+    <h2>hi.</h2>
+    <div id="shortBio">
+      <p>I am an <a href="https://www.colorado.edu/atlas/anthony-pinter"> Assistant Teaching Professor of Creative Technology and Design in the ATLAS Institute</a> at the University of Colorado Boulder. I teach courses on web design and development, programming and computational thinking, and on telling stories with data.</p>
+
+      <p>My research interests focus on understanding the experiences people have during life transitions and how those experiences are represented in sociotechnical systems. I am particularly interested in how people make decisions about the data that are left behind in the wake of a romantic relationship ending, and how those decisions contribute to the formation of post-break-up identities.</p>
+      <!-- I completed my PhD in Information Science, also at CU Boulder, working with <a href="https://www.jedbrubaker.com">Jed Brubaker</a> and <a href="https://cmci.colorado.edu/idlab/">the Identity Lab</a>. My research interests focus on understanding the experiences people have during life transitions and how those experiences are represented in sociotechnical systems. I am particularly interested in how people make decisions about the data that are left behind in the wake of a romantic relationship ending, and how those decisions contribute to the formation of post-break-up identities.-->
+      <p>I am concurrently <a href="https://ist.psu.edu/directory/atp136">an Adjunct Part-Time Faculty member</a> in Penn State's College of Information Sciences and Technology, where I have taught through Penn State's World Campus program since 2016. I am also involved in the <a href="https://www.i3-inclusion.org">iSchool Inclusion Institute (i3)</a>, most recently as a Research Advisor for a team of 2022 i3 Scholars.</p>
+
+    </div>
+
+    <!-- <i class="fa fa-info-circle"></i>-->
+    <!-- <a href="/projects/certainsongsarecursed.html"><div markdown="span" class="alert alert-info" role="alert"> I'm currently running a survey project about break-up songs and memories. Interested in participating? Click here for more information and for a link to the survey!</div></a> -->
+
+    <div id="news">
+      <div id="news-title">
+        <h2>most recently.</h2>
+      </div>
+      <ul>
+        
+        <li>
+          <div><p style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">01 January 2025</p></div>
+          <p>I'm serving as the Web Co-Chair (with Lingyuan Li) for CSCW 2026.</p>
+        </li>
+        
+        <li>
+          <div><p style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">12 November 2024</p></div>
+          <p>I presented a full paper at CSCW 2024, in San Jose, Costa Rica.</p>
+        </li>
+        
+        <li>
+          <div><p style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">01 October 2024</p></div>
+          <p>I've been named courtesy faculty in the Department of Information Science at CU Boulder.</p>
+        </li>
+        
+        <li>
+          <div><p style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">27 April 2024</p></div>
+          <p>With Jed Brubaker, I've published a full paper in the PACM. The paper will be presented at CSCW 2024.</p>
+        </li>
+        
+      </ul>
+      <div id="news-more">
+        <a id="news-more">archive.</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="newsarchive" class="card">
+    <div id="news">
+      <div id="news-title">
+        <h2>news archive.</h2>
+      </div>
+      <ul>
+        
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">01 January 2025</p></div>
+          <p>I'm serving as the Web Co-Chair (with Lingyuan Li) for CSCW 2026.</p>
+          
+        </li>
+        <br>
+        
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">12 November 2024</p></div>
+          <p>I presented a full paper at CSCW 2024, in San Jose, Costa Rica.</p>
+          
+        </li>
+        <br>
+        
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">01 October 2024</p></div>
+          <p>I've been named courtesy faculty in the Department of Information Science at CU Boulder.</p>
+          
+        </li>
+        <br>
+        
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">27 April 2024</p></div>
+          <p>With Jed Brubaker, I've published a full paper in the PACM. The paper will be presented at CSCW 2024.</p>
+          
+        </li>
+        <br>
+        
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">12 December 2023</p></div>
+          <p>I have published an essay on my job search in Commonplace. <a href="https://commonplace.knowledgefutures.org/pub/ons0r91j/release/1">Read here.</a></p>
+          
+        </li>
+        <br>
+        
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">14 July 2023</p></div>
+          <p>I've been honored as the iSchool Inclusion Institute's (i3) Mentor of the Year for 2022-23!</p>
+          
+        </li>
+        <br>
+        
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">01 June 2023</p></div>
+          <p>I'm thrilled to be selected as an ASSETT/CTL Faculty Fellow for the 2023-24 academic year!</p>
+          
+        </li>
+        <br>
+        
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">25 April 2023</p></div>
+          <p>I have received a Small Grant from the Center for Humanities and the Arts to support my work around music and memory!</p>
+          
+        </li>
+        <br>
+        
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">17 March 2023</p></div>
+          <p>A poster project with i3 Scholars Katha Patel, Janai Adams, and Martia Williams was presented at iConference 2023 this week!</p>
+          
+        </li>
+        <br>
+        
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">14 February 2023</p></div>
+          <p>I created Valentine's Day cards using generative AI. <a href="/projects/cards.html">See more here.</a></p>
+          
+        </li>
+        <br>
+        
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">14 November 2022</p></div>
+          <p>I'm presenting at CSCW 2022 this week, on work I did with Jed Brubaker. <a href="./assets/papers/pinter-cscw-2022.pdf">Link here.</a></p>
+          
+        </li>
+        <br>
+        
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">19 October 2022</p></div>
+          <p>Jack Manning (CTD undergraduate) and I contributed to a game hosted by the Center for Research Data and Digital Scholarship at CU Boulder.</p>
+          
+        </li>
+        <br>
+        
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">29 July 2022</p></div>
+          <p>I have published a book chapter, co-authored with Pam Wisniewski and Arup Ghosh. <a href="https://ufl.pb.unizin.org/cyberindia/">See more here.</a></p>
+          
+        </li>
+        <br>
+        
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">10 June 2022</p></div>
+          <p>I'm participating in i3 as a Research Advisor for the 2022 cohort.</p>
+          
+        </li>
+        <br>
+        
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">21 March 2022</p></div>
+          <p>I'll be joining the ATLAS Institute as an Teaching Assistant Professor starting Fall 2022.</p>
+          
+        </li>
+        <br>
+        
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">17 March 2022</p></div>
+          <p>I successfully defended my dissertation!</p>
+          
+        </li>
+        <br>
+        
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">09 February 2022</p></div>
+          <p>I placed 2nd at CU Boulder's annual 3 Minute Thesis competition!</p>
+          
+        </li>
+        <br>
+        
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">09 August 2021</p></div>
+          <p>I'll be participating in the Doctoral Consortium at CSCW 2021!</p>
+          
+        </li>
+        <br>
+        
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">06 May 2021</p></div>
+          <p>I'm a recipient of the 2021 Outstanding Research Assistant Award from CU Boulder GPSG!</p>
+          
+        </li>
+        <br>
+        
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">23 February 2021</p></div>
+          <p>Redesign – in celebration of passing candidacy, I've redesigned my site!</p>
+          
+        </li>
+        <br>
+        
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">12 February 2021</p></div>
+          <p>With the defense of my dissertation proposal, I've officially advanced to candidacy!</p>
+          
+        </li>
+        <br>
+        
+      </ul>
+      <div id="news-more">
+        <a id="back">back.</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="card">
+    <h2>about.</h2>
+    <div id="fullBio">
+      <p>I completed my PhD in Information Science, also at CU Boulder, working with <a href="https://www.jedbrubaker.com">Jed Brubaker</a> and <a href="https://cmci.colorado.edu/idlab/">the Identity Lab</a>. My dissertation explored how people consitute post-break-up identities in social media sites, making decisions about the types of identities they want to display to their audiences, and how platform design helps or hinders that identity re-formation process. </p>
+        
+      <p>Prior to that, I completed my B.S. and M.S. in Information Sciences and Technology at the Pennsylvania State University in 2015 and 2017, respectively. My M.S. was overseen by <a href="https://faculty.ist.psu.edu/lyarger/">Lynette (Kvasny) Yarger</a>.</p>
+
+      <p>I spend most of my free time riding or thinking about bikes and skis (depending on the season). I ride all disciplines on bikes year round, but train specifically for long rides and races like the <a href="https://www.leadvilleraceseries.com/mtb/leadvilletrail100mtb/">Leadville 100 MTB </a>. I am also the Head Coach of Boulder High School's <a href="https://bouldertrack.com">Boys Track & Field program</a>, where I am in charge of the sprints, jumps, and throws programs. I hold a USATF Level 2 Coaching Certification in the Jumps.</p>
+    </div>
+    <h2>contact.</h2>
+    <div id="fullBio">
+      <p>Generally the best way to contact me is via email: <a href="mailto:anthony.pinter@colorado.edu">anthony.pinter@colorado.edu.</a></p>
+      <!-- <p>I maintain a <a href="https://twitter.com/anthonypinter?lang=en">Twitter</a>, but I only use it during conferences.</p>
+      <p>I can be found on <a href="https://github.com/anthonypinter">Github</a>. -->
+      <!-- <p>I'm also on <a href="https://www.instagram.com/anthonypinter/">Instagram</a>, if you'd be interested in seeing what I do in my personal life. -->
+      <!-- <p>For a long time, I had a static website inspired primarily by <a href="ttps://github.com/weightshift/The-Personal-Page">The Personal Page</a> by Naz Hamid at <a href="https://weightshift.com">Weightshift</a>. However, as I enter the last year of my doctoral work, I felt it was time to do something a bit more substantial. I've always been a bit of a minimalist when it comes to design. I was taken with <a href="http://mornaaman.com">Mor Naaman's personal website</a>, but wanted the Jekyll functionality I had come to enjoy from working on <a href="https://cmci.colorado.edu/idlab/">the Identity Lab's site</a>. So I combined the two (with substantial design tweaks), and here we are. You can find the repo for this particular design on <a href="https://github.com/anthonypinter/anthonypinter.github.io">my Github</a>.</p> -->
+    </div>
+  </div>
+
+  <div id="publications" class="card">
     <h2>recent publications.</h2>
     <ul>
+      
       <li>
         <div id="p-info">
           <span id="p-author"><b>Anthony T. Pinter</b>, Jed R. Brubaker. </span><span id="p-author">2024.</span>
-          <span id="p-title">I'm Working on Erasing You, Just Don't Have the Proper Tools: Supporting Online Identity Management After the End of Romantic Relationships.</span>
+          <span id="p-title">I'm Working on Erasing You, Just Don't Have the Proper Tools&#58; Supporting Online Identity Management After the End of Romantic Relationships.</span>
           <span id="p-source"><em>Proceedings of the ACM on Human-Computer Interaction.</em></span><br>
+          
           <span id="p-source"><a href="./assets/papers/pinter-cscw-2024.pdf">PDF</a></span>
+          
+          
           <p>
-        </p></div>
-      </li>     
+        </div>
+      </li>
+      
+      <li>
+        <div id="p-info">
+          <span id="p-author"><b>Anthony T. Pinter</b>. </span><span id="p-author">2023.</span>
+          <span id="p-title">Considering non-tenure track jobs in academia.</span>
+          <span id="p-source"><em>Commonplace Series 3.2; Tenure, Promotion, and Recognition.</em></span><br>
+          
+          
+          <p>
+        </div>
+      </li>
+      
+      <li>
+        <div id="p-info">
+          <span id="p-author">Katha V. Patel, Martia N. Williams, Janai Mychelle Adams, <b>Anthony T. Pinter</b>. </span><span id="p-author">2023.</span>
+          <span id="p-title">It's just that sudden feeling of being transported&#58; Music as a digital possession after a romantic relationship ends.</span>
+          <span id="p-source"><em>Presented at iConference 2023.</em></span><br>
+          
+          <span id="p-source"><a href="./assets/papers/patel2023.pdf">PDF</a></span>
+          
+          
+          <p>
+        </div>
+      </li>
+      
+      <li>
+        <div id="p-info">
+          <span id="p-author"><b>Anthony T. Pinter</b>, Jed R. Brubaker. </span><span id="p-author">2022.</span>
+          <span id="p-title">Behold the Once and Future Me&#58; Online Identity After the End of a Romantic Relationship.</span>
+          <span id="p-source"><em>Proceedings of the ACM on Human Computer Interactions (CSCW 2022).</em></span><br>
+          
+          <span id="p-source"><a href="./assets/papers/pinter-cscw-2022.pdf">PDF</a></span>
+          
+          
+            <span id="p-source"><a href="https://medium.com/@anthonypinter/who-will-i-be-without-you-14a568ab2b73">Blog</a>
+          
+          <p>
+        </div>
+      </li>
+      
+      </ul>
+      <div id="news">
+        <div id="news-more">
+          <a href="https://scholar.google.com/citations?user=Vq_3XusAAAAJ&hl=en&oi=ao">more via google scholar</a><br>
+          <a href="/assets/pintercv.pdf">or via my cv.</a>
+        </div>
+      </div>
     </div>
 
+  <div id="projects" class="card">
+    <h2>recent projects.</h2>
+    <ul>
+      
+      <li class="projects-list">
+        <div id="p-info">
+          <span id="p-title"><b>Heartfelt Expressions</b></span><br>
+          <span id="p-author">In celebration of Valentine's Day, I used generative AI to create Valentine's Day cards. </span>
+          <span id="p-author"><a href='/projects/cards.html'>Read more about this project...</a></span><br>
+          <p></p>
+        </div>
+      </li>
+      
+      <li class="projects-list">
+        <div id="p-info">
+          <span id="p-title"><b>Certain Songs are Cursed</b></span><br>
+          <span id="p-author">A new (2022) group of projects centered on exploring how memory and emotion are captured or evoked by music. </span>
+          <span id="p-author"><a href='/projects/certainsongsarecursed.html'>Read more about this project...</a></span><br>
+          <p></p>
+        </div>
+      </li>
+      
+      <li class="projects-list">
+        <div id="p-info">
+          <span id="p-title"><b>Break-up Feature Prototypes</b></span><br>
+          <span id="p-author">As part of my dissertation, I designed paper prototypes of features that might help people manage the possessions and connections that are left behind online after a break-up. </span>
+          <span id="p-author"><a href='/projects/dissertationprototypes.html'>Read more about this project...</a></span><br>
+          <p></p>
+        </div>
+      </li>
+      
+      <li class="projects-list">
+        <div id="p-info">
+          <span id="p-title"><b>Code Poetry</b></span><br>
+          <span id="p-author">I participated in Code Poetry 2021, submitting a poem in Python about relationships, break-ups, and memory. </span>
+          <span id="p-author"><a href='/projects/codepoetry2021.html'>Read more about this project...</a></span><br>
+          <p></p>
+        </div>
+      </li>
+      
+      </ul>
 
-</body>
+  </div>
+
+  <div id="cv" class="card">
+    <h2>curriculum vitae</h2>
+    <div id="shortBio">
+      <p><a href="/assets/pintercv.pdf" target="_blank" rel="noopener noreferrer">Click here to open PDF in a new window.</a></p>
+    </div>
+  
+    <iframe src="/assets/pintercv.pdf" width="100%" height="500px">
+      </iframe>
+  </div>
+
+  <!-- <div id="contact" class="card">
+    <h2>contact me.</h2>
+    <div id="shortBio">
+      <p>Generally the best way to contact me is via email: <a href="mailto:anthony.pinter@colorado.edu">anthony.pinter@colorado.edu.</a></p>
+      <p>I maintain a <a href="https://twitter.com/anthonypinter?lang=en">Twitter</a>, but I only use it during conferences.</p>
+      <p>I can be found on <a href="https://github.com/anthonypinter">Github</a>.
+      <p>I'm also on <a href="https://www.instagram.com/anthonypinter/">Instagram</a>, if you'd be interested in seeing what I do in my personal life.
+    </div>
+  </div> -->
+  </body>
 
 </html>
