@@ -18,10 +18,6 @@ const projectsBtn = document.getElementById('navi-projects');
 projectsBtn.addEventListener('click', switchPage, false);
 projectsBtn.myParam = 'projects';
 
-const cvBtn = document.getElementById('navi-cv');
-cvBtn.addEventListener('click', switchPage, false);
-cvBtn.myParam = 'cv';
-
 // const contactBtn = document.getElementById('navi-contact');
 // contactBtn.addEventListener('click', switchPage, false);
 // contactBtn.myParam = 'contact';
